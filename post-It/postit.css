@@ -1,0 +1,150 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Indie Flower", cursive;
+  font-weight: 600;
+  font-style: normal;
+}
+main {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#blackboard {
+  height: 500px;
+  width: 1150px;
+  background-color: #727272;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0px 40px;
+  border: 10px solid saddlebrown;
+}
+
+.yellow {
+  background-color: #f1f2bd;
+}
+
+.green {
+  background-color: #c5f2c6;
+}
+
+.lilly {
+  background-color: #c5c5ed;
+}
+
+.postIt > p {
+  font-weight: 400;
+}
+
+.postIt {
+  width: 200px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  gap: 10px 0px;
+  box-shadow: 2px 2px 8px 0px black;
+}
+
+.n1 {
+  transform: rotate(-10deg);
+  transition: 500ms;
+  animation: falldown 1s backwards;
+}
+.n2 {
+  transform: rotate(10deg);
+  transition: 500ms;
+  animation: falldown 1s 1s backwards;
+}
+.n3 {
+  transform: rotate(-10deg);
+  transition: 500ms;
+  animation: falldown 1s 2s backwards;
+}
+.n4 {
+  transform: rotate(10deg);
+  transition: 500ms;
+  animation: falldown 1s 3s backwards;
+}
+.n5 {
+  transform: rotate(-10deg);
+  transition: 500ms;
+  animation: falldown 1s 4s backwards;
+}
+.n6 {
+  transform: rotate(15deg);
+  transition: 500ms;
+  animation: falldown 1s 5s backwards;
+}
+.n7 {
+  transform: rotate(-10deg);
+  transition: 500ms;
+  animation: falldown 1s 6s backwards;
+}
+.n8 {
+  transform: rotate(8deg);
+  transition: 500ms;
+  animation: falldown 1s 7s backwards;
+}
+
+.n1:hover {
+  transition: transform 500ms, box-shadow 1s;
+  transform: rotate(0deg) scale(1.3);
+  box-shadow: 2px 11px 17px 0px black;
+}
+.n2:hover {
+  transition: transform 500ms, box-shadow 1s;
+  transform: rotate(0deg) scale(1.3);
+  box-shadow: 2px 11px 17px 0px black;
+}
+.n3:hover {
+  transition: transform 500ms, box-shadow 1s;
+  transform: rotate(0deg) scale(1.3);
+  box-shadow: 2px 11px 17px 0px black;
+}
+.n4:hover {
+  transition: transform 500ms, box-shadow 1s;
+  transform: rotate(0deg) scale(1.3);
+  box-shadow: 2px 11px 17px 0px black;
+}
+.n5:hover {
+  transition: transform 500ms, box-shadow 1s;
+  transform: rotate(0deg) scale(1.3);
+  box-shadow: 2px 11px 17px 0px black;
+}
+.n6:hover {
+  transition: transform 500ms, box-shadow 1s;
+  transform: rotate(0deg) scale(1.3);
+  box-shadow: 2px 11px 17px 0px black;
+}
+.n7:hover {
+  transition: transform 500ms, box-shadow 1s;
+  transform: rotate(0deg) scale(1.3);
+  box-shadow: 2px 11px 17px 0px black;
+}
+.n8:hover {
+  transition: transform 500ms, box-shadow 1s;
+  transform: rotate(0deg) scale(1.3);
+  box-shadow: 2px 11px 17px 0px black;
+}
+
+@keyframes falldown {
+  0% {
+    transform: scale(3);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
