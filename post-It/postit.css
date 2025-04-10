@@ -140,11 +140,11 @@ main {
 
 @keyframes falldown {
   0% {
-    transform: scale(3);
+    scale: 3;
     opacity: 0;
   }
   100% {
-    transform: scale(1);
+    scale: 1;
     opacity: 1;
   }
 }
